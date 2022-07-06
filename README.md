@@ -118,3 +118,38 @@ const person = {
 // utilizando o ponto para especificar a variável escolhida
 console.log(´${person.name} tem ${person.age} anos´)
 ```
+
+### Array (Vetores)
+
+- Uma lista;
+- Agrupamento de dados;
+- Abre e fecha com colchetes **_[ ]_**;
+
+```bash
+console.log([
+	"leite",
+	"ovos",
+	2,
+	3
+])
+```
+
+Acessando valores dentro do Array
+
+```bash
+// os dados Lion e Monkey são diferentes de Cat
+// Lion e Monkey são Array e Cat é um object dentro do Array
+const animals = [
+	'Lion'
+	'Monkey'
+	{
+		name: 'Cat',
+		age: 3
+	}
+]
+
+// acessar valores dentro do Array
+// dentro dos colchetes [ ] é colocada a posição do Array escolhido
+// e com o .(ponto) podemos especificar o que queremos dentro do Array
+console.log(animals[2].name)
+```
