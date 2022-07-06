@@ -475,7 +475,7 @@ console.log(joao.walk())
 
 - **Prototype-based language** (Linguagem baseada em protótipos);
 - **Prototype chain** (Cadeia de protótipos);
-- ****proto**** ;
+- \***\*proto\*\*** ;
 - Onde posso colocar um **. (ponto)** na frente dos diversos tipos de valores e acessar todas as coisas disponíveis; \*\*\*\*
 
 ### Type conversion coersion
@@ -514,6 +514,7 @@ console.log(joao.walk())
 ### Maiúsculas e minúsculas
 
 - Transformando letras minúsculas em maiúsculas, e maiúsculas em minúsculas;
+
   ```bash
   // Tudo em letras Maiúsculas
   let word = "Programar é muito bacana!"
@@ -571,6 +572,7 @@ console.log(myArray)
 ### Elementos do Array
 
 - Contar elementos de um array;
+
   ```bash
   console.log(["a", "b", "c"].lenght)
 
@@ -619,3 +621,316 @@ console.log(index)
 
 console.log(techs)
 ```
+
+## Expressões e Operadores
+
+- **Expressões** (expressões) ⇒ É qualquer linha de código que resolve algo no JS;
+
+  ```bash
+  // Exemplo de expressão
+  // Podendo ela terminar com ;(ponto e vírgula) ou não, é facultativo
+  let number
+  let number;
+  ```
+
+- **Operators** (operadores)
+
+  - **Binary** ⇒ São dois valores que eu preciso, para que o operador esteja entre eles;
+
+    ```bash
+    let number = 1
+
+    // Operador de soma
+    console.log(number + 1)
+    ```
+
+  - **Unary** (unário)⇒ Só há um elemento/valor, então coloco um operador na frente dele;
+
+    ```bash
+    let number = 1
+
+    // Operador de incremento
+    console.log(++number)
+
+    // Operador de deremento
+    console.log(--number)
+
+    //Operador que define o tipo do elemento
+    console.log(typeof number)
+    ```
+
+  - **Ternary** ⇒ Vai receber três expressões para que se defina algo;
+
+  ```bash
+  let number = 1
+
+  console.log(false ? 'alo' : 'nada')
+  ```
+
+### New
+
+- left-hand-side expression;
+- Server para criar um novo objeto;
+
+  ```bash
+  // Objetos de texto(String) e de número(Number)
+  let name = new String('Ivan')
+  let age = new Number(27)
+  console.log(name, age)
+
+  // Objeto de data(Date)
+  let date = new Date('2020-12-01')
+  console.log(date.__proto__)
+  ```
+
+### Typeof delete
+
+- Operadores unários;
+
+  - **typeof** ⇒ Revela o tipo de dado;
+
+  ```bash
+  console.log(typeof "Ivan")
+  ```
+
+  - **delete** ⇒ Ele procura uma propriedade dentro do objeto e a deleta;
+
+  ```bash
+  cons person = {
+  	name: 'Ivan',
+  	age: 27,
+  }
+  delete person.age
+
+  console.log(person)
+  ```
+
+### Operadores aritméticos
+
+```bash
+// Multiplicação *
+console.log(3 * 5)
+console.log(3.2 * 5.3)
+
+// Divisão /
+console.log(14 / 2)
+
+// Soma +
+console.log(34 + 54)
+
+//Subtração -
+console.log(34 - 26)
+
+// Remainder = Resto da divisão %
+let remainder
+remainder = 11 % 9
+console.log(remainder)
+
+// Incremento ++
+let increment = 0
+increment++
+console.log(incremente)
+
+// Decremento --
+let decrement = 0
+decrement--
+console.log(decrement)
+
+// Exponencial **
+console.log(2 **3)
+```
+
+### Grouping operator
+
+- Operador que agrupa expressões **( )**, parênteses;
+
+```bash
+let total = (2 + 3) * 5
+console.log(total)
+
+let total = ("Olá" + "Olá") + "Mundo"
+console.log(total)
+```
+
+### Operadores de comparação igual a e diferente de
+
+- Irá comparar valores e retornar um Boolean como resposta à comparação;
+- **==** : Igual a;
+- **!=** : Diferente de;
+
+```bash
+let one = 1
+let two = 2
+
+// == Igual a
+// false
+console.log( two == 1 )
+// true
+console.log( onde == "1")
+
+// != Diferente de
+// true
+console.log(onde != two)
+// false
+console.log(onde != 1)
+// false
+console.log(onde != "1")
+```
+
+### Operadores de comparação estritamente igual e estritamente diferente de
+
+- Ele vai comparar os valores e os tipos dos elementos;
+- **===** : Estritamente igual a
+
+  ```bash
+  // tipo number(número)
+  let one = 1
+  let two = 2
+
+  // false - pois aqui 1 é uma String
+  console.log( one === "1")
+  // true - pois aqui 1 é um número
+  console.log( onde === 1)
+  ```
+
+- **!==** : Estritamente diferente de
+
+  ```bash
+  let one = 1
+  let two = 2
+
+  // true pois no valor é igual, mas no tipo ela á diferente
+  console.log( two !== "2")
+  // false porque ele nao é  diferente no tipo e nem no valor
+  console.log( two "== 2)
+  ```
+
+### Operadores de comparação maior (>), menor (>) e igual (=)
+
+```bash
+let one = 1
+let two = 2
+
+// > Maior que
+// false
+console.log(one > two)
+
+// >= Maior igual a
+// true one não é maior que 1 mas é igual a 1
+console.log( one >= 1)
+// true two é maior, mas nao é igual
+console.log( two >= 1)
+
+// < Menor que
+// true 1 é menor que 2
+console.log(one < two)
+
+// <= Menor igual a
+// true
+console.log( one <= two)
+// true
+console.log( one <= 1)
+// false
+console.log( one <= 0)
+```
+
+### Operadores de atribuição (Assingnment)
+
+```bash
+let x
+
+// Assignment
+x = 1
+
+// Addition assignment
+// x = x + 2
+x += 2
+
+// Subtravtion assignment
+// x = x - 1
+x -= 1
+
+//Multiplication assignment
+// x = x * 2
+x *= 2
+
+// Division assignment
+// x = x / 2
+x /=2
+console.log(x)
+
+// Remainder
+x %= 2
+console.log(x)
+
+// Exponetiatio
+x **= 2
+consoler.log (x)
+```
+
+### Operadores lógicos (logical operators)
+
+- São 2 valores que, quando verificado, resultará em verdadeiro (true) ou falso (false);
+
+  ```bash
+  let pao = true
+  let queijo = true
+
+  // AND && - para um só jeito de se fazer (restrito)
+  // true true = true Feliz :D
+  // true false = false Triste :C
+  // false false = false Triste :C
+  console.log(pao && queijo)
+
+  // OR || - para de um jeito ou de outro (não é restrito)
+  // true true = true Feliz :D
+  // true false = true Triste :C
+  // false false = false Triste :C
+  console.log(pao || queijo
+
+  // NOT ! - para trocar o valor atual dela
+  console.log(!pao)
+  ```
+
+### Operador condicional (ternário)
+
+- Dependendo da condição, nós receberemos valores diferentes;
+
+  ```bash
+  // Condição então valor 1 se não valor 2
+  // condition ? value1 : value2
+
+  // Exemplos
+
+  // Café da manhã top
+  let pao = true
+  let queijo = true
+
+  const niceBreakfast = pao && queijo ? 'Café top' : 'Café ruim'
+
+  console.log(niceBreakfast)
+
+  // Maior de 18
+  let age = 16
+  const canDrive = age >= 18 ? 'can drive' : "can't drive"
+
+  console.log(canDrive)
+  ```
+
+  ### Operadores para string (String operator)
+
+  - **comparison** (comparação)
+    ```bash
+    console.log( 'a' == 'a')
+    ```
+  - **concatenation** (concatenação)
+  - Retorna a união de duas Strings;
+    ```bash
+    let alpha = 'alpha'
+    console.log(alpha + 'bet' + 's')
+    // or
+    console.log(alpha += 'bet')
+    // or
+    alpha += 'bet'
+    console.log(alpha)
+    ```
