@@ -85,3 +85,36 @@ Data types:
 - **_null_** ⇒ nulo
   - objeto que não possui nada dentro;
   - diferente de indefinido;
+
+### Object
+
+- Objeto;
+- Propriedades / Atributos
+- Funcionalidades / Métodos
+
+Escrevemos ele no código entre **_{ }_** aspas:
+
+```bash
+{ propriedade: "valor" }
+
+console.log({
+	nome: "Ivan",
+	idade: 27,
+	andar: function() {
+		console.log('andar')
+	}
+})
+```
+
+Utilizando o **_.(ponto)_** para pega um nome no objeto:
+
+```bash
+const person = {
+	name: 'John',
+	age: 30,
+	weight: 88.6,
+	isAdmin: true
+}
+// utilizando o ponto para especificar a variável escolhida
+console.log(´${person.name} tem ${person.age} anos´)
+```
