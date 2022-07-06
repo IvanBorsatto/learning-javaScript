@@ -970,3 +970,20 @@ consoler.log (x)
     // Nestes casos sempre irá retornar true no console, pois falta o contexto do booleano
     console.log( true ? 'verdadeiro' : 'falso' )
     ```
+
+### Precedência de operadores (Operator de operadores)
+
+1. **grouping** ⇒ ( )
+2. **negação** ⇒ ! ++ —
+3. **multiplicação e divisão** ⇒ \* /
+4. **adição e subtração** ⇒ + -
+5. **relacional** ⇒ < <= > >=c
+6. **igualdade** ⇒ == != === !==
+7. **AND** ⇒ &&
+8. **OR** ⇒ | |
+9. **condicional** ⇒ ? :
+10. **assignment** ⇒ = += -= \*=
+
+### Controle de fluxo
+
+- O javaScipt trabalha lendo linha a linha;
