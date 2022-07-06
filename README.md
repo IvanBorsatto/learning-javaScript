@@ -78,3 +78,10 @@ Data types:
 - Somente 2 valores;
   - **_true_** ⇒ Veradeiro;
   - **_false_** ⇒ Falso;
+
+### Undefined vs Null
+
+- **_undefined_** ⇒ indefinido;
+- **_null_** ⇒ nulo
+  - objeto que não possui nada dentro;
+  - diferente de indefinido;
