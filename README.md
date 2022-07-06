@@ -987,3 +987,202 @@ consoler.log (x)
 ### Controle de fluxo
 
 - O javaScipt trabalha lendo linha a linha;
+
+## Condicionais
+
+### If e Else
+
+- Controle que ajuda a aplicação a tomar outros caminhos, muda o fluxo da aplicação;
+
+```bash
+if(condicional) {
+
+} else {
+
+}
+
+// EXEMPLO
+let temperature = 36.5
+
+if(temperature >= 37) {
+	console.log('Febre')
+} else {
+	console.log('Saudável')
+}
+
+// EXEMPLO
+let temperature = 38
+
+if(temperature >= 37.5) {
+	console.log('Febre alta')
+} else if(temperature < 37.5 && temperature >= 37) {
+	console.log('Febre moderada')
+} else {
+	console.log('Saudável')
+}
+```
+
+### Switch
+
+- É usada para se ter inúmeros caminhos, semelhante ao if e else, mas tem uma estrutura diferente;
+
+```bash
+switch (expression) {
+	case 'a':
+		// Código expressão a
+		break
+	case 'b':
+		// Código expressao b
+		break
+	default:
+		break
+}
+
+// EXEMPLO
+let expression = 'a'
+
+switch (expression) {
+	case 'a':
+		console.log('a')
+		break
+	case 'b':
+		console.log('b')
+		break
+	default:
+		console.log('default')
+		break
+}
+
+// EXEMPLO DE UMA CALCULADORA
+function calculate(number1, operator, number2) {
+	let result = 0
+
+	switch (operator) {
+		case '+':
+			result = number1 + number2
+			break
+		case '-':
+			result = number1 - number2
+			break
+		case '*':
+			result = number1 * number2
+			break
+		case '/':
+			result = number1 / number2
+			break
+		default:
+			console.log('não implementado')
+			break
+	}
+
+	return result
+}
+
+console.log(calculate(4, '+', 8))
+```
+
+### Throw
+
+- **throw** ⇒ Disparar, lançar;
+- **try** ⇒ Tentar
+- **catch** ⇒ Pegar, capturar;
+- Tentar(**try**) executar um bloco de código e se der algum erro vai ser disparado(**throw)** este erro, então eu poso capturar(**catch**) este erro na aplicação;
+
+```bash
+// Throw
+fuction sayMyName(name) {
+	if (name === '') {
+		throw new Error("Nome é necessário")
+	}
+
+	console.log('Depois do erro)
+}
+
+// Try...Catch
+try {
+	sayMyName()
+} catch(e) {
+	console.log(e)
+}
+
+```
+
+## Estrutura de repetição
+
+### For (para)
+
+```bash
+for(inicialização de uma variável; condição de continuação do looping; expressão final para parar o looping)
+
+for(let i =0; i < 10; i++) {
+	 console.log(i)
+}
+
+for(let i =100; i > 10; i--) {
+	 console.log(i)
+}
+
+// Break - para a execução do looping
+for(let i =100; i > 10; i--) {
+	if(i=== 50) {
+		break;
+	}
+	console.log(i)
+}
+
+// Continue - pula a execução do momento
+for(let i =10; i > 0; i--) {
+	if(i=== 50) {
+		continue;
+	}
+	console.log(i)
+}
+```
+
+### While(enquanto)
+
+- Quando não soubemos o momento da parada usamos o while;
+
+```bash
+let i = 0
+
+while(i < 10) {
+	console.log(i)
+
+	i++
+}
+```
+
+### For of
+
+- É uma declaração que vai criar um loopping através de alguma variável previamente que tivermos;
+- Serve tanto pra String quanto para Array;
+
+```bash
+let name = 'Ivan'
+let names = ['João', 'Paulo', 'Pedro']
+
+for(let name of names) {
+	cnsole.log(name)
+}
+```
+
+### For in
+
+- Ele cria um lopping em cima de um Objeto, pegando as propriedades do objeto;
+
+```bash
+let person = {
+	name: 'Jhon',
+	age: 30,
+	weigth: 88.6
+}
+
+for(let property in person) {
+	conosole.log(property)
+	// acessando as propiedades por .(ponto)
+	console.log(person.name)
+	// acessando as propriedades através dos [](colchetes)
+	console.log(person[property])
+}
+```
