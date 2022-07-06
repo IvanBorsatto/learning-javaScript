@@ -236,3 +236,23 @@ O JS é uma linguagem fracamente tipada e dinâmica.
 
 </script>
 ```
+
+### Nomeando variáves
+
+- JS é case-sensitive ( sensível ao caso);
+- JS aceita cadeia de caracteres Unicode;
+
+- **Posso**
+  - Iniciar com esses caracteres especiais: $ \_ ;
+  - Iniciar com letras;
+  - Colocar acentos;
+  - Letras maiúsculas e minúsculas fazem diferença;
+- **Não posso**
+  - Iniciar com números;
+  - Colocar espaços vazios no nome;
+- **Ideal**
+  - Criar nomes que fazem sentido;
+  - Que explique o que a variável é ou faz;
+  - camelCase: ao invés de colocar espaços entre as palavras separamos elas com as iniciais maiúsculas. Ex.: currentDate;
+  - snake*case: ao invés de espaços entre as palavras colocamos * (undeline). Ex.: check_if_name;
+  - Escrever em inglês;
