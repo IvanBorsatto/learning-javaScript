@@ -934,3 +934,39 @@ consoler.log (x)
     alpha += 'bet'
     console.log(alpha)
     ```
+
+### Falsy e truthy
+
+- **Falsy**
+  - Quando um valor é considerado false em contexto onde o booleano **é obrigatório** ( condicionais e loops)
+    ```bash
+    /*
+    	false
+    	0
+    	-0
+    	""
+    	null
+    	undefined
+    	NaN
+    */
+    // Nestes casos sempre irá retornar false no console, pois falta o contexto do booleano
+    console.log( NaN ? 'verdadeiro' : 'falso')
+    ```
+- **Truthy**
+  - Quando um valor é considerado true em contextos onde um booleano é obrigatorio ( condicionais e loops)
+    ```bash
+    /*
+    	true
+    	{}
+    	[]
+    	1
+    	3.23
+    	"0"
+    	"false"
+    	-1
+    	Infinity
+    	-Infinity
+    */
+    // Nestes casos sempre irá retornar true no console, pois falta o contexto do booleano
+    console.log( true ? 'verdadeiro' : 'falso' )
+    ```
