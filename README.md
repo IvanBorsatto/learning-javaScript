@@ -5,7 +5,7 @@
   - Alteração do site ou aplicativo, conforme a interação do usuário;
 - Roda também no computador (back-end);
 
-## o que podemos fazer?
+## O que podemos fazer?
 
 - Podemos criar aplicações web, mobile (React Native), desktop (Electron);
 - 99.99% dos sites da web usam JavaScript;
@@ -15,7 +15,7 @@
 
 - Toda linguagem tem;
 - uma boa comunicação necessita de uma boa sintaxe;
-- 82% dos erros para iniciantes na programção;
+- 82% dos erros para iniciantes na programação;
 
 ```bash
 console.log("Bem vindos ao Starter")
