@@ -272,3 +272,18 @@ O JS é uma linguagem fracamente tipada e dinâmica.
 	console.log(name)
 </script>
 ```
+
+### Agrupando declarações
+
+```bash
+<script>
+	// agrupamento de declarações
+	let age, isHuman
+
+	age = 18
+	isHuman = true
+
+	console.log(name, age, isHuman)
+
+</script>
+```
