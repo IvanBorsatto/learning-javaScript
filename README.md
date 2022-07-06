@@ -64,3 +64,11 @@ Data types:
   - **_“”_** ⇒ aspas duplas;
   - **_‘’_** ⇒ aspas simples;
   - **_´´_** ⇒ template literals ou template strings (crases) ;
+
+### Number
+
+- Números;
+  - Inteiros - Integer ⇒ 33 (positivo ou negativo);
+  - reais - float ⇒ 12.5 (todos os tipos);
+  - NaN ⇒ Not a Number;
+  - Infinity ⇒ infinito;
