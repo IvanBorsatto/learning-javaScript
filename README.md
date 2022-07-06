@@ -468,3 +468,154 @@ const joao = new Person("João")
 console.log(ivan.walk())
 console.log(joao.walk())
 ```
+
+## Manipulando dados
+
+### Prototype (protótipo)
+
+- **Prototype-based language** (Linguagem baseada em protótipos);
+- **Prototype chain** (Cadeia de protótipos);
+- ****proto**** ;
+- Onde posso colocar um **. (ponto)** na frente dos diversos tipos de valores e acessar todas as coisas disponíveis; \*\*\*\*
+
+### Type conversion coersion
+
+- **Type conversion** ⇒ Onde “Eu”, explicitamente, altero um tipo de dado para outro tipo (capacidade nossa de fazer a troca);
+- **Type coersion** ⇒ É o JavaScript, inplicitamente, fazendo esta troca (capacidade de forçar uma troca);
+
+### Strings em números
+
+- Transformar String em Número e Número em String;
+  ```bash
+  let string = "123"
+  console.log(Number(string))
+  let number = 321
+  console.log(String(number))
+  ```
+
+### Contando caracteres e dígitos
+
+- Contar quantos caracteres tem uma palavra e quantos dígitos tem um número;
+  ```bash
+  let word = "Paralelepipedo"
+  console.log(word.length)
+  let number = 1234
+  console.log(String(number).length)
+  ```
+
+### Casas decimais
+
+- Transformar um número quebrado com 2 casas decimais e trocar o ponto por vírgula;
+  ```bash
+  let number = 345.334522345
+  console.log(number.toFixed(2).replace(".", ","))
+  ```
+
+### Maiúsculas e minúsculas
+
+- Transformando letras minúsculas em maiúsculas, e maiúsculas em minúsculas;
+  ```bash
+  // Tudo em letras Maiúsculas
+  let word = "Programar é muito bacana!"
+  console.log(word.toUpperCase())
+
+  //Tudo em letras Minúsculas
+  let word = "Programar é muito bacana!"
+  console.log(word.toLowerCase())
+
+  ```
+
+### Encontrando palavras em frases
+
+- Verificar se contém “Tal Palavra” dentro de um texto;
+
+```bash
+// Boolean false
+let phrase = "Eu quero viver o amor!"
+console.log(phraseincludes("Amor"))
+
+//Boolean true
+let phrase = "Eu quero viver o amor!"
+console.log(phraseincludes("amor"))
+```
+
+- includes ⇒ é case sensitive, ele faz diferença entre minúsculas e maiúsculas;
+
+### Separando strings
+
+- Separando um texto que contêm espaços, em um novo array onde cada texto é uma posição do array;
+  ```bash
+  // Cada arrray vai ficar separado por espaços
+  let phrase = "Eu quero viver o Amor!"
+  let myArray = phrase.split(" ")
+  consoler.log(myArray)
+  ```
+- Transformando um array em um texto e onde eram espaços, coloque \_ ;
+  ```bash
+  // Cada arrray vai ficar separado por _
+  let phrase = "Eu quero viver o Amor!"
+  let myArray = phrase.split(" ")
+  let phraseWithUnderscore = myArray.join("_")
+  consoler.log(phraseWithUnderscore)
+  ```
+
+### Criando array com construtor
+
+```bash
+//Manipulando Arrays
+
+let myArray = new Array('a', 'b', 'c')
+console.log(myArray)
+```
+
+### Elementos do Array
+
+- Contar elementos de um array;
+  ```bash
+  console.log(["a", "b", "c"].lenght)
+
+  console.log([
+  	"a",
+  	{type: "array"},
+  	function() { return "alo"},
+  ])
+  ```
+
+### Strings para arrays
+
+- Transformando uma cadeia de caracteres em elementos de um array;
+  ```bash
+  let word = "manipulação"
+  console.log(Array.from(word))
+  ```
+
+### Manipulando arrays
+
+```bash
+let techs = ["html", "css", "js"]
+
+// adicionar um item no fim
+techs.push("nodejs")
+
+// adioconar no começo
+techs.unshift("sql")
+
+// remover do fim
+techs.pop()
+
+// remover do começo
+techs.shift()
+
+// pegar somente algun elementos do array
+console.log(techs.slice(1, 3))
+
+// remover 1 ou mais itens em qualquer posição do array
+techs.splice(1, 1)
+
+// encontrar a posição de um elemento no array
+let index = techs.indexOf('css')
+techs.splice(index, 1)
+console.log(index)
+
+console.log(techs)
+```
