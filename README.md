@@ -256,3 +256,19 @@ O JS é uma linguagem fracamente tipada e dinâmica.
   - camelCase: ao invés de colocar espaços entre as palavras separamos elas com as iniciais maiúsculas. Ex.: currentDate;
   - snake*case: ao invés de espaços entre as palavras colocamos * (undeline). Ex.: check_if_name;
   - Escrever em inglês;
+
+### Declaration assignment var
+
+```bash
+<script>
+	// Variáveis e tipos de dados
+	// declaração ou declaration
+	var name
+
+	// assignment or atribuição de valores
+	name = "Ivan"
+
+	// que tipo de dado foi colocado na variável
+	console.log(name)
+</script>
+```
