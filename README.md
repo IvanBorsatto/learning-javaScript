@@ -315,3 +315,156 @@ O JS é uma linguagem fracamente tipada e dinâmica.
 
 </script>
 ```
+
+## Funções (Function)
+
+- É uma estrutura de dados;
+
+### Declaração e Execução
+
+```bash
+// declaration - declaração da função
+// function statement
+function createPhrases() {
+	console.log('Estudar é muito bom')
+	console.log('Paciência e persistência')
+	console.log('Revisão é a mãe do aprendizado')
+}
+
+// executar função
+// rodar, chamar, invocar
+// execute, run, call, invoke
+createPhrases()
+
+console.log('fim do programa')
+```
+
+### Argumentos e Parâmetros
+
+```bash
+// function expression
+// function anonumous
+
+// parâmetros (parameters) da função criada
+const sum = function(number1, number2){
+	console.log(number1 + number2)
+}
+
+sum(2, 3) // arguments (argumentos) em uma função executada
+```
+
+### Retornando valores dentro da função
+
+```bash
+// parâmetros (parameters)
+const sum = function(number1, number2){
+	let total = number1 + number2
+	return total
+}
+
+let number1 = 34
+let number2 = 25
+
+console.log(´o número 1 é ${number1}´)
+console.log(´o número 2 é ${number2}´)
+console.log(´a soma é ${sum(number1, number2)}´)
+console.log(´total´)
+```
+
+```bash
+// Função é um liquidificador
+
+function fazerSuco(fruta1, fruta2) {
+	return 'suco de: ' + fruta1 + fruta2
+}
+const copo = fazerSuco('banana', 'maçã')
+
+console.log(copo)
+```
+
+### Function scope
+
+```bash
+// function scope
+
+// Neste scope o subject tem um significado
+let subject = 'create video'
+
+// Neste scope o subject tem outro significado
+function createThink(subject) {
+	subject = 'study'
+	return subject
+}
+
+console.log(createThink(subject))
+```
+
+### Function hoisting
+
+```bash
+// function hoisting
+
+sayMyName()
+
+function sayMyName() {
+	console.log('Ivan')
+}
+```
+
+### Arrow function
+
+- Arrow é uma seta, usada no código pela tag **_⇒_** que nada mais é do q o sinal de igual (**_=_**) mais o sinal de maior que (**_>_**);
+
+```bash
+// arrow function
+
+const sayMyName = (name) => {
+	console.log(name)
+}
+
+sayMyName('Ivan')
+```
+
+### Callback function
+
+- Calback do inglês significa chamar de volta;
+- Chamo uma função normal e vou chamar outra função de volta, em algum outro momento dentro desta função;
+
+```bash
+// callback function
+
+function sayMyName(name) {
+	console.log('antes de executar a função callback')
+
+	name()
+
+	console.log('depois de executar a callback')
+}
+
+sayMyName(
+	() => {
+		console.log('estou em uma callback)
+	}
+)
+```
+
+### Funções construtoras
+
+- Temos uma expressão **_new_** que vamos usar na frente da função, que automaticamente irá retornar um objeto;
+- **this keyword -** E dentro do objeto usamos a expressão **_this_** para fazer o molde do objeto;
+
+```bash
+// Function() constructor
+
+function Person(name) {
+	this.name = name
+	this.walk = function() {
+		return this.name + "está andando"
+	}
+}
+
+const ivan = new Person("Ivan")
+const joao = new Person("João")
+console.log(ivan.walk())
+console.log(joao.walk())
+```
