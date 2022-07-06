@@ -202,3 +202,37 @@ O JS é uma linguagem fracamente tipada e dinâmica.
 
 </script>
 ```
+
+### const & let
+
+- São locais e só funcionam o espaço onde foi criada;
+
+```bash
+<script>
+
+	let y = 1;
+
+	{
+		let y = 0
+		console.log('> existe y ', y)
+	}
+
+	console.log('>  existe y depois do bloco? ', y)
+
+</script>
+```
+
+```bash
+<script>
+
+	const y = 1;
+
+	{
+		const y = 0
+		console.log('> existe y ', y)
+	}
+
+	console.log('>  existe y depois do bloco? ', y)
+
+</script>
+```
