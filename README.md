@@ -153,3 +153,18 @@ const animals = [
 // e com o .(ponto) podemos especificar o que queremos dentro do Array
 console.log(animals[2].name)
 ```
+
+## Variáveis
+
+- Nomes simbólicos para receber algum valor;
+- Atalhos de código;
+- Identificadores;
+- 3 palavras reservadas para criar uma variável:
+  - **_var_** (pode ser alterada);
+  - **_let_** (pode ser alterada);
+  - **_const_** (não pode ser alterada);
+
+O JS é uma linguagem fracamente tipada e dinâmica.
+
+- Variáveis não precisam ter um tipo previamente definido;
+- Podemos mudar o conteúdo da variável;
