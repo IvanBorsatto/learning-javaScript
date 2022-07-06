@@ -57,3 +57,10 @@ Data types:
   - Function;
 - Structural Primitive
   - null;
+
+### String
+
+- Cadeia de caracteres (textos)
+  - **_“”_** ⇒ aspas duplas;
+  - **_‘’_** ⇒ aspas simples;
+  - **_´´_** ⇒ template literals ou template strings (crases) ;
