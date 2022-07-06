@@ -183,3 +183,22 @@ O JS é uma linguagem fracamente tipada e dinâmica.
 	// aqui dentro é um bloco e posso colocar qualquer código
 } // aqui fechamos o bloco
 ```
+
+### var
+
+- var é global e, também local;
+
+```bash
+<script>
+
+	var x // Global
+	console.log('> existe x antes do bloco? ', x)
+
+		{
+			var x = 0 // Local
+		}
+
+	console.log('> existe x depois do bloco? ', x)
+
+</script>
+```
