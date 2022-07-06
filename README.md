@@ -72,3 +72,9 @@ Data types:
   - reais - float ⇒ 12.5 (todos os tipos);
   - NaN ⇒ Not a Number;
   - Infinity ⇒ infinito;
+
+### Boolean
+
+- Somente 2 valores;
+  - **_true_** ⇒ Veradeiro;
+  - **_false_** ⇒ Falso;
