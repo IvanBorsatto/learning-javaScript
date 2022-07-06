@@ -287,3 +287,31 @@ O JS é uma linguagem fracamente tipada e dinâmica.
 
 </script>
 ```
+
+### Concatenando e interpolando variáveis
+
+```bash
+<script>
+
+	name = "Ivan"
+
+	// agrupamento de declarações
+	let age, isHuman
+
+	age = 18
+	isHuman = true
+
+	// multiplos argumentos na função
+	// console.log(name, age, isHuman)
+
+	// escrita de texto + variáveis
+
+	// concatenando valores
+	cosole.log('o ' + name + 'tem ' + age ' ano .')
+
+	// interpolando valores com templates literals or template strings
+	//uso de ´´(crase) para abrir e fechar e ${ } para embrulhar a variável
+	console.log(´o ${name} tem ${age} anos.´)
+
+</script>
+```
