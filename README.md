@@ -34,3 +34,26 @@ A tag **\*/\*\*** (abre o comentário) e \***_/_** (fecha o comentário), coment
 /* console.log('Bem vindos ao Starter')
 console.log('Bem vindos ao Starter') */ Comentário em Bloco
 ```
+
+## Tipos de dados
+
+Conforme o ECMAScript standard temos 9 tipo de dados.
+
+Data types:
+
+- Primitive / Primitive value
+  - String;
+  - Number;
+  - Boolean;
+  - undefined;
+  - Symbol;
+  - BigInt;
+- Structural
+  - Object:
+    - Array;
+    - Map;
+    - Set;
+    - Date;
+  - Function;
+- Structural Primitive
+  - null;
