@@ -20,3 +20,17 @@
 ```bash
 console.log("Bem vindos ao Starter")
 ```
+
+## Comentários
+
+A tag **_//_** é usada no código para comentar em linha;
+
+A tag **\*/\*\*** (abre o comentário) e \***_/_** (fecha o comentário), comentário em bloco;
+
+```bash
+
+//console.log('iria ignorar') Comentário em linha
+
+/* console.log('Bem vindos ao Starter')
+console.log('Bem vindos ao Starter') */ Comentário em Bloco
+```
