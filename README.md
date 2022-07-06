@@ -10,3 +10,13 @@
 - Podemos criar aplicações web, mobile (React Native), desktop (Electron);
 - 99.99% dos sites da web usam JavaScript;
 - Linguagem obrigatória para quem programa o Front-end Web;
+
+## Sintaxe
+
+- Toda linguagem tem;
+- uma boa comunicação necessita de uma boa sintaxe;
+- 82% dos erros para iniciantes na programção;
+
+```bash
+console.log("Bem vindos ao Starter")
+```
